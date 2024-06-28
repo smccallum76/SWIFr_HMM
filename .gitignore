@@ -1,2 +1,6 @@
 /HMM/output_db/hmm_predictions.db
 /HMM/output_db/
+/swifr_pkg/test_data/hmm_example_4class/AODE_params/
+/swifr_pkg/test_data/hmm_example_4class/BIC_plots/
+/swifr_pkg/test_data/hmm_example_4class/component_statistic_distributions/
+/swifr_pkg/test_data/hmm_example_4class/simulations/

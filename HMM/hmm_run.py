@@ -68,10 +68,8 @@ test_orig['label_num'] = test_orig['label']
 train_orig['label_num'] = train_orig['label']
 
 replace_dict={name: element for element, name in enumerate(classes)}
-# option_context is called to suppress a future warning resulting from replacing a string with an integer (downcasting)
-with pd.option_context('future.no_silent_downcasting', True):
-    test_orig['label_num'] = test_orig['label_num'].infer_objects().replace(to_replace=replace_dict)
-    train_orig['label_num'] = train_orig['label_num'].infer_objects().replace(to_replace=replace_dict)
+test_orig['label_num'] = test_orig['label_num'].replace(to_replace=replace_dict)
+train_orig['label_num'] = train_orig['label_num'].replace(to_replace=replace_dict)
 
 """ 
 ---------------------------------------------------------------------------------------------------
